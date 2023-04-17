@@ -37,13 +37,21 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
-  flutter_launcher_icons: ^0.12.0
   animated_bottom_navigation_bar: ^1.1.0+1
   page_transition: ^2.0.9
   get: ^4.6.5
   provider: ^6.0.5
   image_picker: ^0.8.7+1
   lottie: ^2.3.1
+  font_awesome_flutter: ^10.4.0
+  tflite_flutter: ^0.9.1
+  tflite_flutter_helper:
+    git:
+      url: https://github.com/filofan1/tflite_flutter_helper.git
+      ref: 783f15e5a87126159147d8ea30b98eea9207ac70
+  image: ^3.0.2
+  flutter_neumorphic: ^3.2.0
+  carousel_indicator: ^1.0.6
 
 dev_dependencies:
   flutter_test:
@@ -79,6 +87,7 @@ flutter:
     - assets/images/
     - assets/icon/
     - animations/
+    - assets/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

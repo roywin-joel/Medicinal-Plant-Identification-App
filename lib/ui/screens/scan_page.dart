@@ -5,7 +5,6 @@ import 'package:get/get.dart';
 import 'package:leaf_snap/constants.dart';
 import 'package:leaf_snap/models/image_picker_controller.dart';
 import 'package:leaf_snap/ui/screens/scan_anim.dart';
-import 'package:leaf_snap/ui/screens/scanner_animation.dart';
 
 class ScanPage extends StatefulWidget {
   const ScanPage({super.key});
@@ -36,13 +35,17 @@ class _ScanPageState extends State<ScanPage> {
               // Do something
               await controller.captureImage();
               FileImage f = FileImage(File(controller.imagePath.toString()));
+              File pred = File(controller.imagePath.toString());
               if (controller.imagePath.toString() != "") {
                 Navigator.push(context, MaterialPageRoute(
                   builder: (context) {
                     // return ScannerAnimation(
                     //   f: f,
                     // );
-                    return ScannerAnim(f: f);
+                    return ScannerAnim(
+                      f: f,
+                      pred: pred,
+                    );
                   },
                 ));
               } else {
@@ -67,13 +70,17 @@ class _ScanPageState extends State<ScanPage> {
               // Do something
               await controller.getImage();
               FileImage f = FileImage(File(controller.imagePath.toString()));
+              File pred = File(controller.imagePath.toString());
               if (controller.imagePath.toString() != "") {
                 Navigator.push(context, MaterialPageRoute(
                   builder: (context) {
                     // return ScannerAnimation(
                     //   f: f,
                     // );
-                    return ScannerAnim(f: f);
+                    return ScannerAnim(
+                      f: f,
+                      pred: pred,
+                    );
                   },
                 ));
               } else {

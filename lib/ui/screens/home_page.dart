@@ -141,7 +141,7 @@ class _HomePageState extends State<HomePage> {
                             context,
                             PageTransition(
                                 child: DetailPage(
-                                  plantId: _plantList[index].plantId,
+                                  plantID: _plantList[index].plantId,
                                 ),
                                 type: PageTransitionType.bottomToTop));
                       },
@@ -265,7 +265,7 @@ class _HomePageState extends State<HomePage> {
                             context,
                             PageTransition(
                                 child: DetailPage(
-                                  plantId: _plantList[index].plantId,
+                                  plantID: _plantList[index].plantId,
                                 ),
                                 type: PageTransitionType.bottomToTop));
                       },
