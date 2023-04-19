@@ -52,6 +52,9 @@ dependencies:
   image: ^3.0.2
   flutter_neumorphic: ^3.2.0
   carousel_indicator: ^1.0.6
+  firebase_auth: ^4.4.1
+  firebase_core: ^2.9.0
+  cloud_firestore: ^4.5.1
 
 dev_dependencies:
   flutter_test:

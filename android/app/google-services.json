@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "125264475524",
+    "project_id": "plant-identification-app",
+    "storage_bucket": "plant-identification-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:125264475524:android:e458b66da11750ec4a19d1",
+        "android_client_info": {
+          "package_name": "com.example.leaf_snap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "125264475524-begmlt0s7c5cn7p6q5ksvvcden3klj33.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjY6x8e-jrRqJFSpipD6fuyPUnpTwCUEw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "125264475524-begmlt0s7c5cn7p6q5ksvvcden3klj33.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

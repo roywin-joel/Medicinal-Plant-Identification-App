@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:leaf_snap/constants.dart';
 import 'package:leaf_snap/models/plants.dart';
 import 'package:leaf_snap/ui/screens/detail_page.dart';
+import 'package:leaf_snap/ui/screens/search_page.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
@@ -63,13 +64,29 @@ class _HomePageState extends State<HomePage> {
                           Icons.search,
                           color: Colors.black54.withOpacity(.6),
                         ),
-                        const Expanded(
-                          child: TextField(
-                            showCursor: false,
-                            decoration: InputDecoration(
-                              hintText: 'Search Plant',
-                              border: InputBorder.none,
-                              focusedBorder: InputBorder.none,
+                        Expanded(
+                          child: GestureDetector(
+                            child: TextField(
+                              showCursor: false,
+                              readOnly: true,
+                              onTap: () {
+                                //SearchPage();
+                                // print('hi');
+                                Navigator.push(
+                                    context,
+                                    PageTransition(
+                                        child: SearchPage(),
+                                        type: PageTransitionType.bottomToTop));
+                                // Navigator.push(context,
+                                //     MaterialPageRoute(builder: (context) {
+                                //   return SearchPage();
+                                // }));
+                              },
+                              decoration: InputDecoration(
+                                hintText: 'Search Plant',
+                                border: InputBorder.none,
+                                focusedBorder: InputBorder.none,
+                              ),
                             ),
                           ),
                         ),
